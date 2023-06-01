@@ -1,0 +1,437 @@
+@charset "UTF-8";
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,li{
+    list-style: none;
+}
+
+body{
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    font-family: "돋움";
+}
+
+/* STYLE */
+
+#wrap{
+    width: 100%;
+    height: calc(400px + 200px + 250px + 120px);
+    background-color: #eee;
+}
+
+/* LEFT */
+
+.left{
+    width: 200px;
+    height: 850px;
+    background-color: #ddd;
+    float: left;
+}
+
+/* LOGO */
+
+.logo{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.logo img{}
+
+/* MENU */
+
+.nav{
+    /* border: 1px solid red; */
+    width: 180px;
+    margin: 0 auto;
+}
+
+.main{}
+.main > li{
+    position: relative;
+}
+.main > li > a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 16px;
+    font-weight: bold;
+}
+.main > li:hover > a{
+    background-color: #bbb;
+    color: #fff;
+}
+
+.sub{
+    z-index: 100;
+    position: absolute;
+    left: 180px;
+    top: 0;
+    width: 1730px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.sub li{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+.sub li a{
+    display: block;
+    width: 120px;
+    text-align: center;
+}
+.sub li a:hover{
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+}
+
+/* SOPT */
+
+.sopt_menu{
+    text-align: center;
+}
+
+.sopt_menu a{
+    display: inline-block;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.sopt_menu a:hover{
+    text-decoration: underline;
+}
+
+.sopt_menu a:first-child{
+    border-right: 1px solid #999;
+}
+
+/* .sopt_menu a:first-child::after{
+    content: "|";
+    display: inline-block;
+    padding-left: 20px;
+} */
+
+.right{
+    width: calc(100% - 200px);
+    height: 850px;
+    background-color: #ccc;
+    float: left;
+}
+
+/* IMG_SLIDE */
+
+.img_slide{
+    width: 100%;
+    height: 400px;
+    background-color: #eee;
+}
+
+.move{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.move li{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.move li a img{
+    width: 100%;
+    height: 100%;
+}
+
+/* BANNER */
+
+.banner{
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    padding: 10px 0;
+}
+
+.ban_inner{
+    width: calc(100% - 20px);
+    height: 180px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.b_1{
+    padding: 4px 0;
+    float: left;
+    width: 180px;
+    height: 178px;
+    margin-right: 20px;
+}
+
+.b_1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.b_2{
+    width: 80%;
+    float: left;
+    padding-top: 45px;
+}
+
+.b_2 h3{
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.arrow{
+    float: left;
+    padding-top: 69px;
+}
+
+/* NOT_GAL */
+
+.not_gal{
+    width: 100%;
+    height: 250px;
+    background-color: #aaa;
+    padding: 10px;
+    position: relative;
+}
+
+.not_gal h2{
+    z-index: 50;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #ccc;
+    font-size: 14px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.not_gal h2.on{
+    background-color: #f1f1f1;
+}
+
+.not_gal ul{
+    position: absolute;
+    left: 10px;
+    top: 44px;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    width: calc(100% - 20px);
+    height: 196px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* NOTICE */
+
+.notice{}
+.notice ul{}
+.notice ul li{
+    height: 43px;
+    line-height: 43px;
+}
+.notice ul li a{
+    display: block;
+    width: 70%;
+    float: left;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.notice ul li span{
+    float: right;
+}
+
+.notice ul li a:hover{
+    border-bottom: 1px solid #000;
+}
+
+/* GALLERY */
+
+.gallery{}
+
+.gallery h2{
+    left: 120px;
+}
+
+.gallery ul{
+    display: none;
+}
+
+.gallery ul li{
+    width: 170px;
+    height: 170px;
+    display: inline-block;
+    margin: 0 100px;
+}
+
+.gallery ul li a img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Q_LINK */
+
+.q_link{
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.q_link ul{
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.q_link ul li{
+    height: 100px;
+    border-bottom: 1px dotted #000;
+    padding: 5px;
+}
+
+.q_link ul li:last-child{
+    border: none !important;
+}
+
+.q_link ul li img{
+    width: 40%;
+}
+
+.q_link ul li a{
+    display: block;
+}
+
+.q_link ul li span{
+    display: block;
+    font-size: 12px;
+}
+
+/* FOOTER */
+
+.footer{
+    clear: both;
+    width: 100%;
+    height: 120px;
+    background-color: #bbb;
+}
+
+/* F_LOGO */
+
+.f_logo{
+    width: 200px;
+    height: 120px;
+    padding-top: 40px;
+    float: left;
+    text-align: center;
+}
+
+/* F_RIGHT */
+
+.f_right{
+    width: calc(100% - 200px);
+    height: 120px;
+    float: right;
+}
+
+/* F_MENU */
+
+.f_menu{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.f_menu a{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.f_menu a:hover{
+    text-decoration: underline;
+}
+
+.f_menu a::before{
+    content: "|";
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.f_menu a:first-child::before{
+    display: none;
+}
+
+/* COPY */
+
+.copy{
+    padding: 0 20px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+/* POPUP */
+
+.popup{
+    display: none;
+    z-index: 300;
+    width: 500px;
+    height: 700px;
+    border: 5px groove black;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.popup h3{
+    padding: 50px 0;
+    font-size: 30px;
+    border-bottom: 1px dotted black;
+}
+
+.popup p{
+    padding: 30px 0;
+    font-size: 16px;
+    line-height: 2.3;
+}
+
+.close{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}

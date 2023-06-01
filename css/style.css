@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,li{
+    list-style: none;
+}
+
+body{
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    font-family: "돋움";
+}
+
+/* STYLE */
+
+#wrap{
+    width: 100%;
+    height: calc(400px + 200px + 250px + 120px);
+    background-color: #eee;
+    position: relative;
+}
+
+/* LEFT */
+
+.left{
+    width: 200px;
+    height: 870px;
+    background-color: #ddd;
+    float: left;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.logo img{}
+
+.nav{
+    padding: 20px 0;
+}
+
+.main{
+    width: 180px;
+    margin: 0 auto;
+}
+
+.main li{
+    margin-bottom: 5px;
+}
+
+.main li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.main li a:hover{
+    background-color: #bbb;
+    color: #fff;
+}
+
+.main li a.on{
+    background-color: #bbb;
+    color: #fff;
+}
+
+.sub{
+    position: absolute;
+    left: 190px;
+    top: 120px;
+    width: calc(100% - 190px);
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.sub_list{}
+
+.sub_list > li{
+    margin-bottom: 5px;
+}
+
+.sub_list > li > ul{}
+.sub_list > li > ul > li{
+    display: inline-block;
+}
+
+.sub_list > li > ul > li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+.sub_list > li > ul > li a:hover{
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+}
+
+.right{
+    width: calc(100% - 200px);
+    height: 870px;
+    background-color: #ccc;
+    float: left;
+}
+
+.footer{
+    clear: both;
+    width: 100%;
+    height: 120px;
+    background-color: #bbb;
+}
